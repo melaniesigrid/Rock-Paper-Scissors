@@ -54,6 +54,7 @@ const playRound = (playerSelection, computerSelection) => {
 
 const game = () => { // Plays a 5 round game that keeps score and reports a winner or loser at the end.
   for (let i = 0; i < 5; i++) {
+    let playerSelection = window.prompt("Rock, Paper, Scissors?", "Rock");
     let computerSelection = computerPlay();
     console.log(playRound(playerSelection, computerSelection));
   }
@@ -65,7 +66,5 @@ const game = () => { // Plays a 5 round game that keeps score and reports a winn
     console.log("It's a TIE");
   }
 }
-
-let playerSelection = window.prompt("Rock, Paper, Scissors?", "Rock");
 
 game();
